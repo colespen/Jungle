@@ -5,8 +5,8 @@
     </header>
 
     <% if enhanced_cart.empty? %>
-      <p>Your cart is currently empty</p>
-      <a class="navbar-brand" href="<%= root_path %>">back to JUNGLE</a>
+      <p class="alert alert-info nav justify-content-center">Your cart is currently empty</p>
+      <a class="nav justify-content-center navbar-brand" href="<%= root_path %>">Continue shopping</a>
     <% else %>
 
   <div class="panel panel-default items">
