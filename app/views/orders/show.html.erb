@@ -40,7 +40,8 @@
           User Email:
           </th>
           <th>
-            <%= @order.email %>
+            <%= current_user.email %>
+            <%# was @order.email %>
           </th>
         </tr>
       </tfoot>

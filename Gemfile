@@ -45,6 +45,7 @@ gem 'rmagick'
 gem 'faker'
 gem 'carrierwave'
 
+gem 'htmlbeautifier'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

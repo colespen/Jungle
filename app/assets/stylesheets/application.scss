@@ -106,6 +106,34 @@ form.button_to {
   }
 }
 
+.nav-item {
+  list-style: none;
+}
+
+.user-auth {
+  .auth-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .auth-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .login-signup {
+    display: flex;
+  }
+  .nav-user-email {
+    font-size: 14px;
+    font-weight: 400;
+    pointer-events: none;
+    padding-top: 0;
+    display: flex;
+  }
+  .logout {
+    padding-right: 17px;
+  }
+}
+
 .page-header {
   margin: 3em 0;
 }
