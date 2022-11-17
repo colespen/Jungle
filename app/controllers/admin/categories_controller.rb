@@ -2,11 +2,7 @@ class Admin::CategoriesController < ApplicationController
   http_basic_authenticate_with :name => ENV['ADMIN_USERNAME'], :password => ENV['ADMIN_PASSWORD']
 
   def index
-    
     @categories = Category.order(id: :desc).all
-    # @category = Category.find(params[:id])
-    # @products = @category.products.order(created_at: :desc)
-    # @products_per_category = 
   end
 
   def new
