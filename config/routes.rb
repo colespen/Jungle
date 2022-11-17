@@ -17,10 +17,7 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
 
-  # get 'users/new'
-  # get 'users/create'
   get '/signup', to: 'users#new'
-  # get 'users/new', to: 'users#new' ?
   post '/users', to: 'users#create'
 
   namespace :admin do
