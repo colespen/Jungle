@@ -1,6 +1,5 @@
 <tr>
   <td>
-    
     <h4><%= category.name %></h4>
     <br>
   </td>
@@ -8,7 +7,7 @@
     ...
   </td>
   <td>
-    <%= category.created_at.strftime("%B %d, %Y") %>
+    <%= category.created_at.strftime("%B %d, %Y at %T") %>
   </td>
   <%# <td>
     <%= link_to fa_icon('trash'), [:admin, product], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
