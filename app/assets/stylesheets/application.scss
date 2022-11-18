@@ -108,12 +108,19 @@ form.button_to {
 
 .nav-item {
   list-style: none;
+
+  [href="/cart"] {
+    color: #96edca;
+    &:hover {
+      color: #d0ffec;
+    }
+  }
 }
 
 .user-auth {
   .auth-main {
     display: flex;
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
   }
   .auth-container {
     display: flex;
@@ -130,7 +137,7 @@ form.button_to {
     display: flex;
   }
   .logout {
-    padding-right: 17px;
+    padding-right: 5px;
   }
 }
 
@@ -150,4 +157,9 @@ form.button_to {
 
 .login-signup-container {
   width: 90%;
+}
+
+.intro h4 {
+  margin-bottom: 20px;
+  font-size: 22px;
 }
