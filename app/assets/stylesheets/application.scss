@@ -128,12 +128,17 @@ form.button_to {
   }
   .login-signup {
     display: flex;
-    
-    [href="/login"]  {
-      padding-right: 5px;
-    }
-    [href="/signup"] {
-      padding-right: 5px;
+
+    @media screen and (max-width: 991px) {
+      .logout {
+        padding-right: 15px;
+      }
+      [href="/login"] {
+        padding-right: 15px;
+      }
+      [href="/signup"] {
+        padding-right: 15px;
+      }
     }
   }
   .nav-user-email {
@@ -143,8 +148,11 @@ form.button_to {
     padding-top: 0;
     display: flex;
   }
+}
+
+@media screen and (max-width: 991px) {
   .logout {
-    padding-right: 5px;
+    padding-right: 15px;
   }
 }
 
@@ -169,4 +177,20 @@ form.button_to {
 .intro h4 {
   margin-bottom: 20px;
   font-size: 22px;
+}
+
+.form-group {
+  padding-bottom: 10px;
+
+  i {
+    font-size: 16px;
+    color: grey;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .title {
+    font-size: 2.2vw;
+  }
 }

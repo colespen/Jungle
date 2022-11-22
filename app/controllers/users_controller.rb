@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   def new
   end
+  
   def create
-    # if user == User.where(email: "")
-    # debugger
-    # @parameters = user_params 
-    user = User.new(user_params)
+    # create new variable so method isn't called again in User.new
+    new_user_params = user_params
+    new_user_params[:email] = new_user_params[:email].strip.downcase  
+    user = User.new(new_user_params)
     
     if user.save
       session[:user_id] = user.id
