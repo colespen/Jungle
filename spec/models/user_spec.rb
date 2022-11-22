@@ -2,13 +2,13 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
 
-  describe 'Validations' do
+  describe "Validations" do
 
     before(:each) do
       @new_user = User.new(
         first_name: "Rory", last_name: "Maddem",
-        email: "rrrmmm@hotmail.com", password: nil,
-        password_confirmation: nil
+        email: "rrrmmm@hotmail.com", password: "12345678",
+        password_confirmation: "12345678"
       )
     end
     
@@ -29,9 +29,30 @@ RSpec.describe User, type: :model do
         expect(@new_user).to_not be_valid
       end
     end
+    
+    describe ".authenticate_with_credentials" do
+      it "if user credentials not found return nil" do
+        # save user to database first before authenticate
+        @new_user.save 
+        email = nil
+        password = nil
+        # self.authenticate!!! needs User.class.
+        expect(User.authenticate_with_credentials(email, password)).to eql(nil)
+      end
+      it "emails with whitespace are successful" do
+        @new_user.save 
+        email = " rrrmmm@hotmail.com "
+        password = "12345678"
+        user_auth = User.authenticate_with_credentials(email, password)
+        expect(user_auth.email).to eql("rrrmmm@hotmail.com")
+      end
+      it "emails with any case are successful" do
+        @new_user.save 
+        email = " rRrMmM@HoTmAiL.CoM "
+        password = "12345678"
+        user_auth = User.authenticate_with_credentials(email, password)
+        expect(user_auth.email).to eql("rrrmmm@hotmail.com")
+      end
+    end
   end
 end
-
-
-
-# puts "~~~~~~~", @new_user.errors.full_messages
