@@ -128,6 +128,13 @@ form.button_to {
   }
   .login-signup {
     display: flex;
+    
+    [href="/login"]  {
+      padding-right: 5px;
+    }
+    [href="/signup"] {
+      padding-right: 5px;
+    }
   }
   .nav-user-email {
     font-size: 14px;
