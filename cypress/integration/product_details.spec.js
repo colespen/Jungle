@@ -4,7 +4,8 @@ describe("Navigation from home", () => {
   });
 
   it("clicking on product goes to product details pg", () => {
-    cy.get(".products > :nth-child(1)").click();
+    // .first() !!! when list or multiple
+    cy.get(".products article").first().click();
     cy.get(".product-detail").should("exist");
   });
 });
