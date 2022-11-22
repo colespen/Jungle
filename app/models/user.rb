@@ -12,4 +12,8 @@ class User < ApplicationRecord
 
   validates :password, length: { minimum: 8 }
   validates :email, presence: true, uniqueness: {case_sensitive: false} 
+
+  before_save do 
+    self.email = self.email.strip.downcase  
+  end
 end
