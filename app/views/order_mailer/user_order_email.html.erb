@@ -1,0 +1,17 @@
+
+
+    <h3>Hello there, <%= @current_user.first_name %></h3>
+    <p>
+      Your order with The Jungle has been placed successfully.
+      <br> 
+      <% order_total = 0 %>
+      <% @order.line_items.each do |item| %>
+          <%= render 'item', product: item.product, quantity: item[:quantity].to_i %>
+            <% order_total += item.product.price %>
+        <% end %>
+    </p>
+    <p>
+    <a href="<%=@url_order%>">View your order here</a> or <a href="<%=@url_order%>">continue browsing</a> 
+    <br> 
+    </p>
+    <p>We look forward to seeing you again soon. Have a wild day!</p>
