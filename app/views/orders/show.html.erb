@@ -35,15 +35,18 @@
             <%= humanized_money_with_symbol order_total %>
           </th>
         </tr>
+
         <tr>
+        <% if current_user %>
          <th colspan="4">
           User Email:
           </th>
           <th>
             <%= current_user.email %>
-            <%# was @order.email %>
+        <% end %>
           </th>
         </tr>
+        
       </tfoot>
     </table>
   </div>
