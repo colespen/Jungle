@@ -9,3 +9,5 @@ class OrderMailer < ApplicationMailer
     mail(to: "spencerlewiscole@gmail.com", subject: "The Jungle ~ Order id: #{@order.id} Successful!")
   end
 end
+
+# replace mail( to: @current_user.email, ) for production

@@ -1,17 +1,22 @@
-
-
     <h3>Hello there, <%= @current_user.first_name %></h3>
     <p>
       Your order with The Jungle has been placed successfully.
-      <br> 
+    </p>
+     <p>
+      Please expect to recieve the following plants soon:
+      <br><br>
+
       <% order_total = 0 %>
       <% @order.line_items.each do |item| %>
           <%= render 'item', product: item.product, quantity: item[:quantity].to_i %>
             <% order_total += item.product.price %>
         <% end %>
     </p>
+
+    <p>Your order total is <%=humanized_money_with_symbol @order.total_cents / 100.00%>.</p>
     <p>
-    <a href="<%=@url_order%>">View your order here</a> or <a href="<%=@url_order%>">continue browsing</a> 
+    <a href="<%=@url_order%>">View your order here</a> or <a href="<%=@url_browse%>">continue browsing</a>.
     <br> 
     </p>
-    <p>We look forward to seeing you again soon. Have a wild day!</p>
+    <p>We look forward to seeing you again soon. Have a wild day!
+    </p>
