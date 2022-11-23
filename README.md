@@ -1,7 +1,9 @@
 # JUNGLE
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1 as a challening for learning a new language and framework.
+<br>
 Users register securely and can login with ease.
+<br>
 Admin have control over product and category creation.
 <br>
 Stretch: email users with notification upon successful order!
