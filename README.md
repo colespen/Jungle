@@ -1,6 +1,8 @@
 # JUNGLE
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+Users register securely and can login with ease.
+Admin have control over product and category creation.
 <br>
 Stretch: email users with notification upon successful order!
 
@@ -41,17 +43,16 @@ http://localhost:3000/rails/mailers/order/user_order_email
 
 <br/>
 
-!["Select the day"](https://github.com/colespen/scheduler/blob/master/docs/InterviewSched_1.png)
-
+!["Home view"](https://github.com/colespen/Jungle/blob/master/docs/home_desktop.png)
 <br/>
 
-!["Create a new interview"](https://github.com/colespen/scheduler/blob/master/docs/nterviewSched_3.png)
+!["Browse all products"](https://github.com/colespen/Jungle/blob/master/docs/browse_desktop.png)
 <br/>
 
-!["Save the interview"](https://github.com/colespen/scheduler/blob/master/docs/nterviewSched_2.png)
-
-!["Select the day"](https://github.com/colespen/scheduler/blob/master/docs/InterviewSched_1.png)
-
+!["Checkout"](https://github.com/colespen/Jungle/blob/master/docs/cart_desktop.png)
 <br/>
 
-!["Create a new interview"](https://github.com/colespen/scheduler/blob/master/docs/nterviewSched_3.png)
+!["Mobile and nav dropdown"](https://github.com/colespen/Jungle/blob/master/docs/mobile_w_dropdown.png)
+<br/>
+
+!["Admin creates new product"](https://github.com/colespen/Jungle/blob/master/docs/admin_newprod.png)
