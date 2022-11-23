@@ -1,11 +1,7 @@
 # JUNGLE
 
-<<<<<<< HEAD
-A mini e-commerce application built with Rails 6.1 in order to rapidly learn a new technology while building out and testing new features. 
-=======
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 Stretch: email users with notification upon successful order!
->>>>>>> feature/order-receipt
 
 ## Setup
 
@@ -33,9 +29,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
 - Bootstrap 5
 - PostgreSQL 9.x
-<<<<<<< HEAD
-- Stripe
-=======
 - Stripe
 
 ## Mailer Preview
@@ -43,4 +36,3 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 to preview the mailer spec, please visit: 
 http://localhost:3000/rails/mailers/order/user_order_email
 
->>>>>>> feature/order-receipt
