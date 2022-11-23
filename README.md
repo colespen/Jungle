@@ -1,6 +1,7 @@
 # JUNGLE
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+<br>
 Stretch: email users with notification upon successful order!
 
 ## Setup
@@ -36,3 +37,21 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 to preview the mailer spec, please visit: 
 http://localhost:3000/rails/mailers/order/user_order_email
 
+##
+
+<br/>
+
+!["Select the day"](https://github.com/colespen/scheduler/blob/master/docs/InterviewSched_1.png)
+
+<br/>
+
+!["Create a new interview"](https://github.com/colespen/scheduler/blob/master/docs/nterviewSched_3.png)
+<br/>
+
+!["Save the interview"](https://github.com/colespen/scheduler/blob/master/docs/nterviewSched_2.png)
+
+!["Select the day"](https://github.com/colespen/scheduler/blob/master/docs/InterviewSched_1.png)
+
+<br/>
+
+!["Create a new interview"](https://github.com/colespen/scheduler/blob/master/docs/nterviewSched_3.png)
