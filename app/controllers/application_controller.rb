@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  # this method used in products/index
+  # this method used/accessed in products/index
   def current_user
     # session.delete(:user_id)
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
